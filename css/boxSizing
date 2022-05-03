@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /*border: 1px black solid;*/
+}
