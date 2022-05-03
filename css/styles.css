@@ -1,14 +1,125 @@
 :root {
   --rojo: #d03b40;
   --beige: #ded6c0;
-  --Blanco: #f5f0ed;
-  --Gris: #241d1b;
+  --blanco: #f5f0ed;
+  --gris: #241d1b;
   --txtClaro: #f5f0ed;
   --txtOscuro: #3c3c3b;
 
-  --typeH1: 44px;
-  --typeH2: 28px;
-  --typeH3: 24px;
-  --squareTxt: 16px;
-  --buttons: 14px;
+  --typeH1: 4.4rem;
+  --typeH2: 2.8rem;
+  --typeH3: 2.4rem;
+  --squareTxt: 1.6rem;
+  --buttons: 1.4rem;
+}
+
+/* --Header--*/
+.header {
+  background-color: var(--rojo);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.principal-navegation {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.principal-navegation a {
+  color: var(--txtClaro);
+  text-decoration: none;
+  font-size: var(--squareTxt);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: center;
+}
+
+.principal-navegation a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 769px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .principal-navegation {
+    flex-direction: row;
+    align-items: flex-end;
+    padding-top: 1rem;
+  }
+}
+
+/* --Parte 1--*/
+.description-part-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--txtClaro);
+  background-image: url(../img/Fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 62rem;
+}
+
+.big-title {
+  font-size: var(--typeH1);
+}
+
+.text-ordinary {
+  font-size: var(--squareTxt);
+  width: auto;
+}
+
+@media (min-width: 769px) {
+  .text-ordinary {
+    width: 50%;
+  }
+}
+
+/* --Parte 2--*/
+.description-part-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.square-1, .square-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+.square-1-title, .square-2-title {
+  text-transform: uppercase;
+}
+
+.square-1{
+  background-color: var(--rojo);
+  color: var(--beige);
+}
+
+.square-2{
+  background-color: var(--beige);
+  color: var(--rojo);
+}
+
+@media (min-width: 769px) {
+  .description-part-2 {
+    flex-direction: row;
+  }
+
+  .square-1, .square-2{
+    padding: 10rem;
+  }
 }
