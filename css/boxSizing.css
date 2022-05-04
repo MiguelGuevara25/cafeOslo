@@ -11,6 +11,5 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
-  /*border: 1px red solid;*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
