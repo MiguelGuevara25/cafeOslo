@@ -94,7 +94,8 @@
   flex-direction: column;
 }
 
-.square-1, .square-2{
+.square-1,
+.square-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,16 +103,17 @@
   padding: 2rem 3rem;
 }
 
-.square-1-title, .square-2-title {
+.square-1-title,
+.square-2-title {
   text-transform: uppercase;
 }
 
-.square-1{
+.square-1 {
   background-color: var(--rojo);
   color: var(--beige);
 }
 
-.square-2{
+.square-2 {
   background-color: var(--beige);
   color: var(--rojo);
 }
@@ -121,7 +123,9 @@
     flex-direction: row;
   }
 
-  .square-1, .square-2{
+  .square-1,
+  .square-2 {
+    width: 50%;
     padding: 10rem;
   }
 }
@@ -142,44 +146,94 @@
   height: 62rem;
 }
 
-.button-breakfast{
+.button-breakfast {
   text-transform: uppercase;
-  border: .3rem var(--blanco) solid;
-  border-radius: .5rem;
+  border: 0.3rem var(--blanco) solid;
+  border-radius: 0.5rem;
   padding: 1.5rem;
   font-size: var(--squareTxt);
 }
 
-.button-breakfast:hover{
+.button-breakfast:hover {
   background-color: var(--rojo);
   font-weight: 700;
   cursor: pointer;
 }
 
 /* --Part 4-- */
-.description-part-4{
-  display: grid;
+.description-part-4 {
+  display: flex;
+  flex-direction: column;
   padding: 5rem;
   background-color: var(--blanco);
-  grid-template-columns: repeat(2, 1fr);
 }
 
-.form-cake{
+.form-cake {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 5rem;
-}
-
-.content-txt{
-  width: 50rem;
-  color: var(--txtOscuro);
-}
-
-.content-txt h1{
-  text-transform: uppercase;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .content-txt {
-  width: 50%;
+  color: var(--txtOscuro);
+  width: auto;
+  text-align: justify;
+}
+
+.content-txt h1 {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .description-part-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-cake {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 5rem;
+  }
+
+  .content-txt {
+    text-align: start;
+    width: 50%;
+  }
+}
+
+/* --Parte 5-- */
+.description-part-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-part-5 .square-1 {
+  background-color: var(--beige);
+  color: var(--rojo);
+}
+
+.description-part-5 .square-2 {
+  background-color: var(--rojo);
+  color: var(--beige);
+}
+
+@media (min-width: 769px) {
+  .description-part-5 {
+    flex-direction: row;
+  }
+}
+
+/* --Footer-- */
+.footer {
+  background-color: var(--txtOscuro);
+  color: var(--txtClaro);
+  display: inline-block;
+  width: 100%;
+  padding: 5rem;
 }
