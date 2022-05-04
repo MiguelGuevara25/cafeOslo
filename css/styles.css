@@ -13,7 +13,7 @@
   --buttons: 1.4rem;
 }
 
-/* --Header--*/
+/* --Header-- */
 .header {
   background-color: var(--rojo);
   display: flex;
@@ -56,7 +56,7 @@
   }
 }
 
-/* --Parte 1--*/
+/* --Parte 1-- */
 .description-part-1 {
   display: flex;
   flex-direction: column;
@@ -79,6 +79,7 @@
 .text-ordinary {
   font-size: var(--squareTxt);
   width: auto;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 769px) {
@@ -87,7 +88,7 @@
   }
 }
 
-/* --Parte 2--*/
+/* --Parte 2-- */
 .description-part-2 {
   display: flex;
   flex-direction: column;
@@ -125,7 +126,7 @@
   }
 }
 
-/*--Part 3--*/
+/* --Part 3-- */
 
 .description-part-3 {
   display: flex;
@@ -147,4 +148,38 @@
   border-radius: .5rem;
   padding: 1.5rem;
   font-size: var(--squareTxt);
+}
+
+.button-breakfast:hover{
+  background-color: var(--rojo);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* --Part 4-- */
+.description-part-4{
+  display: grid;
+  padding: 5rem;
+  background-color: var(--blanco);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-cake{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.content-txt{
+  width: 50rem;
+  color: var(--txtOscuro);
+}
+
+.content-txt h1{
+  text-transform: uppercase;
+}
+
+.content-txt {
+  width: 50%;
 }
