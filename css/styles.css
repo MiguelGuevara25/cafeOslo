@@ -73,6 +73,7 @@
 
 .big-title {
   font-size: var(--typeH1);
+  text-transform: uppercase;
 }
 
 .text-ordinary {
@@ -122,4 +123,28 @@
   .square-1, .square-2{
     padding: 10rem;
   }
+}
+
+/*--Part 3--*/
+
+.description-part-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--txtClaro);
+  background-image: url(../img/Fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 62rem;
+}
+
+.button-breakfast{
+  text-transform: uppercase;
+  border: .3rem var(--blanco) solid;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  font-size: var(--squareTxt);
 }
